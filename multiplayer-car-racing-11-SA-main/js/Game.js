@@ -234,7 +234,7 @@ class Game {
         carsAtEnd: 0,
         playerCount: 0,
         gameState: 0,
-        palyers: {}
+        players: {}
       });
       window.location.reload();
     });
@@ -242,11 +242,11 @@ class Game {
 
   showFuelBar() {
     push();
-    image(fuelImage, width / 2 - 130, height - player.positionY - 350, 20, 20);
+    image(fuelImage, width / 2 - 130, height - player.positionY - 250, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY - 350, 185, 20);
+    rect(width / 2 - 100, height - player.positionY - 250, 185, 20);
     fill("#ffc400");
-    rect(width / 2 - 100, height - player.positionY - 350, player.fuel, 20);
+    rect(width / 2 - 100, height - player.positionY - 250, player.fuel, 20);
     noStroke();
     pop();
   }
